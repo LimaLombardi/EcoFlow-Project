@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/cssall.css"/>
+    <link rel="stylesheet" type="text/css" href="css/solu.css">
+    <link rel="icon" href="./favicons/favicon-16x16.png">
+    <title>Menu</title>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <header>
+            <nav>
+                <a href onclick="reloadPage()">
+                    <img src="img/Flowithnoback.png" width="40%">
+                </a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="principal.html">Início</a></li>
+                        <li><a href="historia.html">Quem Somos</a></li>
+                        <li><a href="energia.html">Energia</a></li>
+                        <li><a href="explicacao.html">Explicação</a></li>
+                        <li><a href="comu.html">Comunidade</a></li>
+                        <li><a href="solu.html">Soluções</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <br/>
+    <div class="text">
+        <h1>Soluções de Energia Sustentável e Acessível</h1>
+        <br />
+        <p>Explore nossas soluções inovadoras e compartilhe suas próprias ideias para um</p>
+        <p>futuro energético mais limpo e eficiente!</p>
+    </div>
+    <br />
+    <div class="cards">
+        <div class="card">
+            <h1>Sistema Solar Residencial</h1>
+            <br />
+            <p>Sistema solar completo para residências, incluindo painéis de alta eficiência, inversores inteligentes e baterias de armazenamento, permitindo que você aproveite ao máximo a energia solar.</p>
+        </div>
+        <div class="card">
+            <h1>Jardim Solar Comunitário</h1>
+            <br />
+            <p>Criação de jardins solares áreas comunitárias, permitindo que moradores de apartamento invistam em energia solar.</p>
+        </div>
+    </div>
+    <br />
+    <div class="cards1">
+        <div class="card">
+            <h1>Microgeração Eólica</h1>
+            <br />
+            <p>Turbinas eólicas compactas e silenciosas, projetadas para ambientes urbanos, complementando seu sistema de energia renovável.</p>
+        </div>
+        <div class="card">
+            <h1>Programa de Reciclagem de Painéis Solares</h1>
+            <br />
+            <p>Implementação de um sistema de reciclagem para painéis solares antigos, promovendo a economia circular no setor de energia renovável.</p>
+        </div>
+        <div class="card">
+            <h1>Sistema de Gerenciamento de Energia</h1>
+            <br />
+            <p>Criação de uma plataforma inteligente que otimiza o consumo de energia em tempo real, integrando diferentes fontes de energia renovável e maximizando a eficiência energética.</p>
+        </div>
+    </div>
+    <br />
+    <div class="imag">
+        <img src="img/imagem3.png">
+        <h1>Turbinas Eólicas</h1>
+    </div>
+    <div class="forms">
+        <div class="forms-conteiner">
+            <h1>Compartilhe Sua Solução</h1>
+            <form id="formulario" method="POST">
+                <!--representa uma legenda para um item em uma interface de usuário. Ele pode estar associado com um elemento de controle, colocando este dentro do elemento label, ou usando o atributo for-->
+                <label for="nome">Nome</label> <br />
+                <input type="text" id="nome" name="nome" required>
+                <br/>
+                <label for="endereco">Localidade</label> <br />
+                <input type="text" id="endereco" name="endereco" required placeholder="Endereço com rua, nome da rua, número, complemento, CEP, cidade e estado">
+                <br/>
+                <label for="energia">Tipo de energia</label> <br />
+                <input type="text" id="energia" name="energia" required>
+                <br/>
+                <label for="solu">Título da solução</label> <br />
+                <input type="text" id="solu" name="solu" required>
+                <br/>
+                <label for="descricao">Solução</label> <br />
+                <textarea id="descricao" name="descricao" rows="3" required></textarea>
+                <br/>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        const form = document.getElementById('formulario');
+    
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+    
+            const nome = document.getElementById('nome').value.trim();
+            const endereco = document.getElementById('endereco').value.trim();
+            const energia = document.getElementById('energia').value.trim();
+            const solu = document.getElementById('solu').value.trim();
+            const descricao = document.getElementById('descricao').value.trim();
+            if (!nome) {
+                alert('Por favor, preencha o campo Nome.');
+                return;
+            }
+    
+            if (!endereco || endereco.length < 10) {
+                alert('Por favor, forneça um endereço válido com pelo menos 10 caracteres.');
+                return;
+            }
+    
+            if (!energia) {
+                alert('Por favor, informe o tipo de energia.');
+                return;
+            }
+    
+            if (!solu || solu.length < 5) {
+                alert('O título da solução deve ter pelo menos 5 caracteres.');
+                return;
+            }
+    
+            if (!descricao || descricao.length < 10) {
+                alert('A descrição da solução deve ter pelo menos 10 caracteres.');
+                return;
+            }
+            alert('Formulário enviado com sucesso!');
+            form.submit();
+        });
+    </script>
+    <br />
+    <br />
+    <footer>
+        <div class="rodape">
+            <div class="ecoflow">
+                <h1>Sobre a ECOFLOW</h1>
+                <p>Somos dedicados a promover o uso de energia limpa e sustentável, ajudando a transformar o futuro para um ambiente mais verde e saudável.</p>
+            </div>
+            <div class="contato">
+                <h1>Entre em Contato</h1>
+                <p>Email: contato@ecoflow.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+        </div>
+        <div class="fim">
+            <p>&copy; 2024 ECOFLOW. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

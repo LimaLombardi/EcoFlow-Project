@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/cssall.css"/>
+    <link rel="stylesheet" type="text/css" href="css/histo.css">
+    <link rel="icon" href="./favicons/favicon-16x16.png">
+    <title>Menu</title>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <header>
+            <nav>
+                <a href onclick="reloadPage()">
+                    <img src="img/Flowithnoback.png" width="40%">
+                </a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="principal.html">Início</a></li>
+                        <li><a href="historia.html">Quem Somos</a></li>
+                        <li><a href="energia.html">Energia</a></li>
+                        <li><a href="explicacao.html">Explicação</a></li>
+                        <li><a href="comu.html">Comunidade</a></li>
+                        <li><a href="solu.html">Soluções</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="histo">
+        <h1>Nossa História</h1>
+        <div class="texto">
+            <div class="item">
+                <img src="img/reun.jpg" alt="Reunião em agosto de 2024" id="a">
+                <div>
+                    <h2>Agosto de 2024</h2>
+                    <p>Constituição de um tema a </p>
+                    <p>partir do tópico da ODS de </p>
+                    <p>Energia Sustentável e Limpa</p>
+                </div>
+            </div>
+    
+            <div class="item">
+                <img src="img/proto.jpeg" alt="Prototipação em setembro de 2024" id="b">
+                <div>
+                    <h2>Setembro de 2024</h2>
+                    <p>Construção da prototipação de<p>
+                    <p>um site para a web que se inclui</p>
+                    <p>no tema proposto</p>
+                </div>
+            </div>
+    
+            <div class="item">
+                <img src="img/cod.jpeg" alt="Criação do site em outubro de 2024" id="c">
+                <div>
+                    <h2>Outubro de 2024</h2>
+                    <p>Criação do site para a web a</p>
+                    <p>partir da prototipação feita</p>
+                </div>
+            </div>
+    
+            <div class="item">
+                <img src="img/mock.jpeg" alt="Mockup em novembro de 2024" id="d">
+                <div>
+                    <h2>Novembro de 2024</h2>
+                    <p>Composição de um Mockup e</p>
+                    <p>uma identidade visual adequada</p>
+                    <p>ao tema</p> 
+                </div>
+            </div>
+    
+            <div class="item">
+                <img src="img/apre.jpeg" alt="Lançamento em dezembro de 2024" id="e">
+                <div>
+                    <h2>Dezembro de 2024</h2>
+                    <p>Lançamento da nossa plataforma online e</p>
+                    <p>apresentação dessa na Feira Tecnológica</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="center">
+    <div class="box">
+        <h1>Nossa Equipe</h1>
+        <p>A ECOFLOW é movida por uma equipe diversificada e apaixonada, comprometida em fazer a diferença no mundo da energia limpa. Conheça alguns dos nossos membros-chave:</p>
+        <table>
+            <tr>
+                <th><img src="img/ben.jpeg" class="ben"></th>
+                <th><img src="img/murilo.jpeg" class="mu"></th>
+                <th><img src="img/en.jpeg" class="en" ></th>
+            </tr>
+            <tr>
+                <td><h2>Pedro Amaro&nbsp;</h2></td>
+                <td><h2>Murilo Siqueira&nbsp;</h2></td>
+                <td><h2>Enzo de Lima</h2></td>
+            </tr>
+            <tr>
+                <td><p>CEO e Co-Fundador</p></td>
+                <td><p>Diretor de Tecnologia</p></td>
+                <td><p>Gerente de Projetos</p></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <footer>
+        <div class="rodape">
+            <div class="ecoflow">
+                <h1>Sobre a ECOFLOW</h1>
+                <p>Somos dedicados a promover o uso de energia limpa e sustentável, ajudando a transformar o futuro para um ambiente mais verde e saudável.</p>
+            </div>
+            <div class="contato">
+                <h1>Entre em Contato</h1>
+                <p>Email: contato@ecoflow.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+        </div>
+        <div class="fim">
+            <p>&copy; 2024 ECOFLOW. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

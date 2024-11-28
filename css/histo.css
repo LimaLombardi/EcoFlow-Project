@@ -1,0 +1,187 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    width: 800px;
+    background-color: #e5fae5;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 4px;
+    padding: 20px;
+}
+.box table h1 {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    color: #02391e;
+    text-align: left;
+    max-width: 70%;
+    margin: 2px;
+}
+.box table p {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 70%;
+}
+.box td {
+    padding: 30px;
+}
+.box td {
+    padding: 0.5px 30px;
+}
+.mu {
+    width: 50%;
+    border-radius: 5%;
+}
+.ben {
+    width: 100%;
+    border-radius: 5%;
+}
+.en {
+    width: 80%;
+    border-radius: 5%;
+}
+.histo h1 {
+    font-size: 18px;
+    margin-top: 40px;
+    text-align: center;
+    color:#02391e;
+}
+.histo .texto {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.histo .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.histo .item img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+}
+    
+.histo .item div {
+    text-align: left;
+    max-width: 70%;
+}
+
+.histo .item h2 {
+    font-size: 18px;
+    color: #02391e;
+    margin-bottom: 10px;
+}
+
+.histo .item p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .histo .item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .histo .item img {
+        width: 120px;
+    }
+
+    .histo .item div {
+        max-width: 90%;
+    }
+
+    .histo .item h2 {
+        font-size: 16px;
+    }
+
+    .histo .item p {
+        font-size: 12px;
+    }
+
+    .histo h1 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}
+
+/* Estilo do menu lateral */
+.nav-links {
+    display: none; /* Esconde o menu por padrão */
+    position: fixed; /* Fixa o menu na tela */
+    top: 0; /* Alinha ao topo */
+    right: 0; /* Alinha à direita */
+    width: 250px; /* Largura do menu */
+    height: 100%; /* Ocupa toda a altura da tela */
+    background-color: #02391e; /* Cor de fundo do menu */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Sombra para destacar o menu */
+    padding: 20px; /* Espaçamento interno */
+    z-index: 1000; /* Para que fique acima de outros elementos */
+    opacity: 70%;
+}
+/* Mostrar o menu quando ativo */
+.nav-links.active {
+    display: block; /* Mostra o menu quando ativo */
+}
+
+/* Estilo para os links do menu */
+.nav-links a {
+    display: block; /* Cada link ocupa uma linha */
+    margin: 10px 0; /* Espaçamento entre os links */
+    color: #ffff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+/* Estilo do botão de toggle do menu */
+.menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #02391e; /* Cor do botão */
+    color: #99E631; /* Cor do texto */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1001; /* Para que fique acima do menu */
+}
+
+/* Para dispositivos maiores */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none; /* Esconde o botão em telas maiores */
+    }
+    .nav-links {
+        display: block; /* Mostra o menu normalmente em telas maiores */
+        position: static; /* Retorna a posição normal */
+        width: auto; /* Largura automática */
+        height: auto; /* Altura automática */
+        box-shadow: none; /* Remove a sombra */
+        padding: 0; /* Remove o espaçamento interno */
+        opacity: 100%;
+    }
+}

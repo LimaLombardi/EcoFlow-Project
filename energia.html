@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/cssall.css"/>
+    <link rel="stylesheet" type="text/css" href="css/energia.css">
+    <link rel="icon" href="./favicons/favicon-16x16.png">
+    <title>Menu</title>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <header>
+            <nav>
+                <a href onclick="reloadPage()">
+                    <img src="img/Flowithnoback.png" width="40%">
+                </a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="principal.html">Início</a></li>
+                        <li><a href="historia.html">Quem Somos</a></li>
+                        <li><a href="energia.html">Energia</a></li>
+                        <li><a href="explicacao.html">Explicação</a></li>
+                        <li><a href="comu.html">Comunidade</a></li>
+                        <li><a href="solu.html">Soluções</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="energia">
+        <h1>Nossa Visão de Energia</h1>
+        <br />
+        <p>Na EcoFlow, acreditamos que a energia limpa e sustentável é o caminho para um futuro</p>
+        <p>melhor. Nosso tema central é "Energizando o Futuro Sustentável", e estamos comprometidos</p>
+        <p>em transformar a maneira como o mundo pensa e utiliza a energia.</p>
+        <br />
+        <p>Focamos em fontes de energia renováveis como solar, eólica, hidrelétrica e a biomassa.</p>
+        <p>buscando inovações que tornam essas tecnologias mais acessíveis e eficientes para todos.</p>
+    </div>
+    <div class="imag">
+        <img src="img/imagem2.png">
+        <h1>Turbina Eólica</h1>
+    </div>
+    <br />
+    <div class="box">
+        <div class="objetivos">
+            <h2>Nossos objetivos</h2><br>
+            <p>✔️ Educar a população sobre os beneficios.</p><br>
+            <p>✔️ Desenvolver e promover tecnologias de energia renovável inovadoras.</p><br>
+            <p>✔️ Reduzir a dependência de combustiveis fósseis e diminuir emissões de carbono.</p><br>
+            <p>✔️ Colaborar com comunidades e empresas para implementar soluções de energia sustentável.</p><br>
+            <p>✔️ Influenciar politicas públicas para apoiar a transição para energia limpa.</p><br>
+            <p>✔️ Criar empregos no setor de energia renovável.</p><br>
+        </div>
+    </div>    
+    <br />
+    <br />
+    <footer>
+        <div class="rodape">
+            <div class="ecoflow">
+                <h1>Sobre a ECOFLOW</h1>
+                <p>Somos dedicados a promover o uso de energia limpa e sustentável, ajudando a transformar o futuro para um ambiente mais verde e saudável.</p>
+            </div>
+            <div class="contato">
+                <h1>Entre em Contato</h1>
+                <p>Email: contato@ecoflow.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+        </div>
+        <div class="fim">
+            <p>&copy; 2024 ECOFLOW. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/cssall.css"/>
+    <link rel="stylesheet" type="text/css" href="css/prin.css">
+    <link rel="icon" href="./favicons/favicon-16x16.png">
+    <title>Menu</title>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <header>
+            <nav>
+                <a href onclick="reloadPage()">
+                    <img src="img/Flowithnoback.png" width="40%">
+                </a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="principal.html">Início</a></li>
+                        <li><a href="historia.html">Quem Somos</a></li>
+                        <li><a href="energia.html">Energia</a></li>
+                        <li><a href="explicacao.html">Explicação</a></li>
+                        <li><a href="comu.html">Comunidade</a></li>
+                        <li><a href="solu.html">Soluções</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="principal">
+        <h1>Bem-vindo à ECOFLOW</h1>
+        <br />
+        <p>Somos uma empresa dedicada a informar e capacitar a população sobre a <b> ODS 7 Energia Limpa e Sustentável</b>. Nossa missão é criar um futuro mais verde e limpo, fornecendo soluções inovadoras e educação sobre energia renovável.</p>
+        <br />
+        <p>Na ECOFLOW, acreditamos que o conhecimento é poder. Estamos aqui para ajudar você a entender melhor as opções de</p>
+        <p>energia limpa disponíveis e como elas podem beneficiar não apenas o meio ambiente, mas também sua vida diária e</p>
+        <p>economia.</p>
+    </div>
+    <div class="logo">
+        <img src="img/minilogo.png">
+    </div>
+    <br />
+    <br />
+    <div class="imag">
+        <img src="img/solar.png">
+        <h1>Paineis Solares</h1>
+    </div>
+    <br />
+    <footer>
+        <div class="rodape">
+            <div class="ecoflow">
+                <h1>Sobre a ECOFLOW</h1>
+                <p>Somos dedicados a promover o uso de energia limpa e sustentável, ajudando a transformar o futuro para um ambiente mais verde e saudável.</p>
+            </div>
+            <div class="contato">
+                <h1>Entre em Contato</h1>
+                <p>Email: contato@ecoflow.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+        </div>
+        <div class="fim">
+            <p>&copy; 2024 ECOFLOW. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

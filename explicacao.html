@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/cssall.css"/>
+    <link rel="stylesheet" type="text/css" href="css/explica.css">
+    <link rel="icon" href="./favicons/favicon-16x16.png">
+    <title>Menu</title>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <header>
+            <nav>
+                <a href onclick="reloadPage()">
+                    <img src="img/Flowithnoback.png" width="40%">
+                </a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="principal.html">Início</a></li>
+                        <li><a href="historia.html">Quem Somos</a></li>
+                        <li><a href="energia.html">Energia</a></li>
+                        <li><a href="explicacao.html">Explicação</a></li>
+                        <li><a href="comu.html">Comunidade</a></li>
+                        <li><a href="solu.html">Soluções</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="text">
+        <h1>Entendendo a Energia Renovável e Limpa</h1>
+        <br />
+        <p>Na EcoFlow, acreditamos que a energia limpa e sustentável é o caminho para</p>
+        <p>um futuro melhor. Nosso tema central é "Energizando o Futuro Sustentável", e</p>
+        <p>estamos comprometidos em transformar a maneira como o mundo pensa em</p>
+        <p>utiliza a energia.</p>
+        <br />
+        <p>Focamos em fontes de energia renováveis como solar, eólica, hidrelétrica e</p>
+        <p>biomassa, buscando inovações que tornem essas tecnologias mais acessíveis e</p>
+        <p>eficientes para todos.</p>
+    </div> 
+    <div class="cards">
+        <div class="card">
+            <img src="img/Instalação de painéis solares em um telhado residencial.jpg">
+            <h1>Instalação de Painéis Solares</h1>
+            <p>Aprenda os passos para instalar painéis solares em sua residência e começar a gerar sua própria energia limpa.</p>
+            <a href="1.html"><button>Saiba Mais</button></a>
+        </div>
+
+        <div class="card">
+            <img src="img/Turbina eólica em um campo verde.jpg">
+            <h1>Como Funciona a Energia Eólica</h1>
+            <p>Descubra os princípios por trás da geração de energia eólica e como ela pode ser aplicada em larga escala</p>
+            <a href="2.html"><button>Saiba Mais</button></a>
+        </div>
+
+        <div class="card">
+            <img src="img/Barragem hidroelétrica com água fluindo.jpg">
+            <h1>Energia Hidroelétrica Explicada</h1>
+            <p>Entenda como a força da água é convertida em eletricidade e os impactos ambientais dessa tecnologia.</p>
+            <a href="3.html"><button>Saiba Mais</button></a>
+        </div>
+    </div>
+    <footer>
+        <div class="rodape">
+            <div class="ecoflow">
+                <h1>Sobre a ECOFLOW</h1>
+                <p>Somos dedicados a promover o uso de energia limpa e sustentável, ajudando a transformar o futuro para um ambiente mais verde e saudável.</p>
+            </div>
+            <div class="contato">
+                <h1>Entre em Contato</h1>
+                <p>Email: contato@ecoflow.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+        </div>
+        <div class="fim">
+            <p>&copy; 2024 ECOFLOW. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>

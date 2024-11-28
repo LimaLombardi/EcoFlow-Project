@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/cssall.css"/>
+    <link rel="stylesheet" type="text/css" href="css/1.css">
+    <link rel="icon" href="./favicons/favicon-16x16.png">
+    <title>Menu</title>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <header>
+            <nav>
+                <a href onclick="reloadPage()">
+                    <img src="img/Flowithnoback.png" width="40%">
+                </a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="principal.html">Início</a></li>
+                        <li><a href="historia.html">Quem Somos</a></li>
+                        <li><a href="energia.html">Energia</a></li>
+                        <li><a href="explicacao.html">Explicação</a></li>
+                        <li><a href="comu.html">Comunidade</a></li>
+                        <li><a href="solu.html">Soluções</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+        <div class="content-section">
+            <h2>Instalação de Painéis Solares</h2><br>
+            <p>Instalar painéis solares é uma excelente maneira de economizar energia. Siga estas etapas:</p><br>
+            <ul>
+                <li><strong>1. Avaliação Inicial:</strong> Verifique se o local tem acesso à luz solar suficiente.</li><br>
+                <li><strong>2. Planejamento:</strong> Planeje o sistema e escolha os componentes.</li><br>
+                <li><strong>3. Escolha do Fornecedor:</strong> Encontre empresas confiáveis para instalação.</li><br>
+                <li><strong>4. Instalação e Conexão:</strong> Monte o sistema e conecte à rede.</li><br>
+                <li><strong>5. Manutenção:</strong> Realize a manutenção regularmente para garantir eficiência.</li><br>
+            </ul>
+            <a href="explicacao.html"><button>Voltar</button></a>
+        </div><br><br>
+    <footer>
+        <div class="rodape">
+            <div class="ecoflow">
+                <h1>Sobre a ECOFLOW</h1>
+                <p>Somos dedicados a promover o uso de energia limpa e sustentável, ajudando a transformar o futuro para um ambiente mais verde e saudável.</p>
+            </div>
+            <div class="contato">
+                <h1>Entre em Contato</h1>
+                <p>Email: contato@ecoflow.com</p>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+        </div>
+        <div class="fim">
+            <p>&copy; 2024 ECOFLOW. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
